@@ -30,7 +30,7 @@ for (const line of lines) {
       successfulTxnIds.set(event.txn_id, event);
     }
   } catch (error) {
-    console.log("Error occurred", error);
+    console.log("Invalid JSON line, will be skipped");
   }
 }
 
